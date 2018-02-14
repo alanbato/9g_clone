@@ -1,7 +1,7 @@
 //Post index
 .post-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
+  border-bottom: 2px #EEEEEE solid;
 }
 
 .post-image {
@@ -10,6 +10,15 @@
 
 .post-title {
   text-align: left;
+}
+
+.post-title-link {
+  color: #000000;
+
+  &:hover {
+    color: #157EFB;
+    text-decoration: none;
+  }
 }
 
 .post-wrapper {
@@ -29,3 +38,47 @@
   margin: 0 auto;
   width: 300px;
 }
+
+//Show
+
+.main-post-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+.main-post-image {
+  max-width: 700px;
+}
+
+.next {
+  float: right;
+}
+
+.previous {
+  float: left;
+}
+
+.pagination-button {
+  background-color: #FF3C1F;
+  color: #FFFFFF;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px;
+  vertical-align: middle;
+  width: 150px;
+
+  &:hover {
+    background-color: #FD6857;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.pagination-row {
+  margin: 0 auto;
+  width: 750px;
+}
+
+
+

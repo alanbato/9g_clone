@@ -1,0 +1,17 @@
+<h1><%= @post.title %></h1>
+
+<div class="main-post-wrapper">
+  <div class="row pagination-row">
+    <div class="col-sm-6">
+      <%= previous_button(@post) %>
+    </div>
+    <div class="col-sm-6">
+      <%= next_button(@post) %>
+    </div>
+  </div>
+  <div class="main-post">
+    <%= image_tag @post.meme, :class=>"main-post-image" %>
+  </div>
+</div>
+
+

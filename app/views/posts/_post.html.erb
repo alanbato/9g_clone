@@ -1,6 +1,6 @@
 <div class="post-wrapper">
   <div class="post-card">
-    <h3 class="post-title"><%= post.title %></h3>
+    <h3 class="post-title"><%= link_to post.title, post_path(post), class: "post-title-link" %></h3>
     <%= image_tag(post.meme, :class => "post-image") %>
   </div>
 </div>
