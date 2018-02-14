@@ -48,7 +48,7 @@ $ rails db:migrate
 Now that the project's setup is complete, go ahead and start the server!
 
 ```
-$ rails s
+$ rails server
 ```
 
 Or, if you're the lazy kind
