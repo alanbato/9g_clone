@@ -1,0 +1,15 @@
+<h1 class="new-post-title">New Post</h1>
+
+<div class="new-post-form-wrapper">
+  <%= form_for @post, url: posts_path, html: { multipart: true } do |f| %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, :class => "form-control" %>
+
+      <%= f.label :meme %>
+      <%= f.file_field :meme, :class => "form-control-file" %>
+
+      <%= f.submit :class=>"btn btn-large btn-primary"%>
+    </div>
+  <% end %>
+</div>
