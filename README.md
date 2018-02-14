@@ -1,24 +1,64 @@
-# README
+# NineG Clone Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Demo designed to showcase some o Ruby on Rails' basic
+functionality and the framework's potential to Rails noobs by cloning
+the popular meme site 9Gag.
 
-Things you may want to cover:
+The Demo was made specifically for an introductory workshop @TecDeMonterrey in 2018.
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+In order to take a look at the demo in action, first clone the repo.
 
-* Configuration
+If you have SSH setup in your machine, go ahead and use the SSH version
+of the clone command:
 
-* Database creation
+```
+$ git clone git@github.com:HectorMg/9g_clone.git
+```
 
-* Database initialization
+Otherwise, use the regular HTTPS option:
 
-* How to run the test suite
+```
+$ git clone https://github.com/HectorMg/9g_clone.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Project setup
 
-* Deployment instructions
+This demo is a Ruby on Rails project. As such, the first thing you do
+once it's cloned is head inside and run the `bundle install` command to
+install all dependencies.
 
-* ...
+```
+$ cd 9g_clone
+$ bundle install
+```
+
+The `bundle install` command should take about a minute or less if
+everything's fine.
+
+Next, since this project has an SQL database, you must create a copy of
+that database locally and run the schema migrations:
+
+```
+$ rails db:create
+$ rails db:migrate
+```
+
+Now that the project's setup is complete, go ahead and start the server!
+
+```
+$ rails s
+```
+
+Or, if you're the lazy kind
+
+```
+$ rails s
+```
+
+Rails has a bunch of short aliases like that!
+
+Enjoy exploring the demo and get ready to learn how to make it!
+
+
