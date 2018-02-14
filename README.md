@@ -57,7 +57,12 @@ Or, if you're the lazy kind
 $ rails s
 ```
 
+
 Rails has a bunch of short aliases like that!
+
+Once the server is up and running, go ahead and type `localhost:3000`
+into your browser.
+
 
 Enjoy exploring the demo and get ready to learn how to make it!
 
